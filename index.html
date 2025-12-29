@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiLo Labs</title>
+    <style>
+        /* This removes default margins so the page is clean */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000000; /* Sets background to black */
+        }
+
+        /* This container centers the image */
+        .container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 100vh;           /* Full height of the viewport */
+            width: 100%;
+        }
+
+        /* This controls the image itself */
+        img {
+            max-width: 100%;  /* Ensure it never gets wider than the screen */
+            max-height: 100%; /* Ensure it never gets taller than the screen */
+            object-fit: contain; /* Keeps the whole image visible without cropping */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="my-landing-background.jpg" alt="AiLo Labs Landing Page">
+    </div>
+
+</body>
+</html>

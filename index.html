@@ -6,7 +6,7 @@
     <title>AiLo Labs</title>
 
     <link rel="icon" type="image/png" href="favicon-labs.png">
-    
+
     <style>
         /* This removes default margins so the page is clean */
         body, html {
@@ -15,6 +15,7 @@
             height: 100%;
             width: 100%;
             background-color: #000000; /* Sets background to black */
+            overflow: hidden; /* Prevents scrollbars */
         }
 
         /* This container centers the image */
@@ -28,9 +29,13 @@
 
         /* This controls the image itself */
         img {
-            max-width: 100%;  /* Ensure it never gets wider than the screen */
-            max-height: 100%; /* Ensure it never gets taller than the screen */
-            object-fit: contain; /* Keeps the whole image visible without cropping */
+            width: 100%;   /* Forces image to take full width */
+            height: 100%;  /* Forces image to take full height */
+            
+            /* KEY CHANGE: 'cover' fills the screen. 
+               If you want to see the WHOLE image without cropping, change 'cover' back to 'contain' */
+            object-fit: cover; 
+            
             display: block;
         }
     </style>
@@ -38,9 +43,9 @@
 <body>
 
     <div class="container">
-        <img src="my-landing-background.jpg" alt="AiLo Labs Landing Page">
+        <img src="my-landing-background-EXT.jpg" alt="AiLo Labs Landing Page">
     </div>
 
 </body>
-
 </html>
+
